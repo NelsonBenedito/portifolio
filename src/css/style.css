@@ -1,0 +1,103 @@
+/* Reset CSS*/
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  font-size: 62.5%;
+  --bg-url: url("./src/images/dots.svg");
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  font-size: 1.6rem;
+  height: 10rem;
+  a {
+    color: #f1f1f1;
+  }
+}
+body {
+  background: rgb(34, 7, 56);
+  background: linear-gradient(
+    166deg,
+    rgba(34, 7, 56, 1) 0%,
+    rgba(178, 32, 240, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+  height: 100vh;
+  background-image: url("../images/dots.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-block: 5rem;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #f1f1f1;
+      border-radius: 10rem;
+      padding: 1rem;
+      transition: 0.2s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+
+  .ph,
+  .ph-light,
+  .ph-fill,
+  .ph-thin {
+    font-size: 3.5rem;
+    color: #f1f1f1;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    width: 320px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    img {
+      max-width: 320px;
+    }
+  }
+}
