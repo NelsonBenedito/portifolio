@@ -16,20 +16,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://platform.linkedin.com/badges/js/profile.js"
-      async
-      defer
-      type="text/javascript"
-    ></script>
     <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
   </head>
-  <body>
+  <body id="page">
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
     <header>
       <img src=" " alt="" />
-      <a target="_blank" href="https://github.com/NelsonBenedito"
-        >Meus projetos</a
-      >
+      <a href="#projects">Meus projetos</a>
     </header>
     <hr />
     <section class="about">
@@ -62,18 +56,23 @@
       </div>
 
       <div class="img-container">
-        <img src="./src/images/profileimg.png" alt="" />
+        <img src="./src/images/avatar.svg" alt="" />
       </div>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="content-projects">
         <h2>Meus Projetos</h2>
-        <i class="ph-fill ph-barricade"></i>
-        <p>Em desenvolvimento</p>
+        <a disable href="">
+          <span>
+            <i class="ph-fill ph-barricade"></i>
+            <p>Em desenvolvimento</p>
+          </span>
+        </a>
       </div>
     </section>
     <footer>
       <p>Desenvolvido por <a href="#about">Nelson Benedito</a></p>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
