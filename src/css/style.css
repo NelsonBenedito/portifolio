@@ -68,6 +68,7 @@ header {
   width: 100%;
   font-size: 1.6rem;
   height: 10rem;
+  z-index: 10000;
   backdrop-filter: blur(14.5px);
   -webkit-backdrop-filter: blur(14.5px);
   a {
