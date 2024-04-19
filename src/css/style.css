@@ -182,6 +182,7 @@ body {
 
 .projects {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #f1f1f1;
@@ -190,6 +191,7 @@ body {
 
   h2 {
     font-size: 3.4rem;
+    margin-bottom: 1.4rem;
   }
 
   .ph-fill {
@@ -198,33 +200,87 @@ body {
 
   .content-projects {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 1rem;
 
     a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       color: #f1f1f1;
-      /* cursor: not-allowed; */
+      position: relative;
+      border-radius: 4rem;
+      overflow: hidden;
+      img {
+        width: 350px;
+        position: absolute;
+        top: 0;
+        z-index: -2;
+      }
     }
 
     span {
       display: flex;
       flex-direction: column;
+      position: relative;
       align-items: center;
-      padding: 15rem 2rem;
+      justify-content: center;
+      height: 45rem;
+      padding: 1rem 2rem;
       border-radius: 4rem;
       border: 1px solid #f1f1f1;
-      background: #f1f1f134;
-      backdrop-filter: blur(10px);
-      transition: 0.2s;
-
-      p {
-        font-size: 2.4rem;
+      background: #32016b56;
+      /* background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 100%,
+        rgba(241, 241, 241, 1) 100%
+      ); */
+      backdrop-filter: blur(10px) brightness(0.5);
+      transition: 0.5s;
+      .ph {
+        font-size: 8rem;
+        transition: 0.5s;
       }
 
+      .ph-hand-pointing {
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+      }
+      h3 {
+        font-size: 2.4rem;
+        transition: 0.5s;
+      }
+
+      p {
+        font-size: 1.4rem;
+        transition: 0.5s;
+        max-width: 220px;
+        text-overflow: ellipsis;
+      }
       &:hover {
         border: 1px solid #ffffff;
-        background: #f1f1f156;
+        background: #32016b00;
+        /* background: linear-gradient(
+          180deg,
+          rgba(241, 241, 241, 0) 0%,
+          rgba(241, 241, 241, 1) 100%
+        ); */
+        backdrop-filter: blur(0px) brightness(0.6);
+        h3,
+        p,
+        .ph-shuffle {
+          transform: translateY(20rem);
+        }
+        .ph-hand-pointing {
+          opacity: 1;
+          transform: translateY(-20rem);
+        }
+        p,
+        .ph-shuffle {
+          opacity: 0;
+        }
       }
     }
   }
@@ -256,7 +312,6 @@ footer {
         width: 16px;
         height: 16px;
       }
-      
     }
     .ph,
     .ph-light,
