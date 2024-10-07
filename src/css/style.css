@@ -244,7 +244,8 @@ hr {
         p,
         .ph-shuffle,
         .ph-file,
-        .ph-fill {
+        .ph-fill,
+        .ph-guitar {
           opacity: 1;
         } 
       }
@@ -304,7 +305,8 @@ hr {
         p,
         .ph-shuffle,
         .ph-file,
-        .ph-fill {
+        .ph-fill,
+        .ph-guitar {
           opacity: 0;
         }
       }
