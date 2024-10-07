@@ -277,17 +277,18 @@ hr {
       h3 {
         font-size: 2.2rem;
         line-height: 2rem;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         text-align: center;
         transition: 0.5s;
       }
 
       p {
-        font-size: 1.4rem;
-        line-height: 1.6rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
         transition: 0.5s;
-        max-width: 220px;
+        max-width: 200px;
         text-overflow: ellipsis;
+        color: #e6e6e6;
       }
       &:hover {
         background: #32016b00;
