@@ -17,6 +17,7 @@
   font-size: 62.5%;
   --bg-url: url("../images/dots.svg");
   scroll-behavior: smooth;
+  background: rgb(34, 7, 56);
 }
 /* Custom scrollbar */
 ::-webkit-scrollbar {
@@ -133,7 +134,7 @@ hr {
         justify-content: center;
         align-items: center;
         transition: 0.2s;
-        
+
         li {
           border: 1px solid #f1f1f1;
           border-radius: 10rem;
@@ -247,7 +248,7 @@ hr {
         .ph-fill,
         .ph-guitar {
           opacity: 1;
-        } 
+        }
       }
       }
     }
